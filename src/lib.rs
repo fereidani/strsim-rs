@@ -251,7 +251,6 @@ where
         for (j, b_elem) in b.into_iter().enumerate().take(max_bound) {
             if min_bound <= j && a_elem == b_elem && !b_flags.set_if_not_set(j) {
                 a_flags.set(i);
-                b_flags.set(j);
                 matches += 1;
                 break;
             }
