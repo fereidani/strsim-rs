@@ -76,7 +76,7 @@ impl<'a> BitSlice<'a> {
         BitIterator {
             bitvec: self,
             index: 0,
-            register: self.data[0],
+            register: 0,
         }
     }
 }
